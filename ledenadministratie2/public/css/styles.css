@@ -1,0 +1,282 @@
+/* ---- Variabelen ---- */ 
+:root {
+    /*kleur*/
+    --color-first-color: rgb(13, 43, 74);
+    --color-second-color: rgb(21, 70, 122);
+    --color-third-color: rgb(68, 114, 196);
+    --color-fourth-color: rgb(255, 255, 255);
+    --color-fifth-color: rgb(248,249,250);
+    --color-sixth-color: rgb(58, 134, 65);
+    /*lettertype h1 en vergelijkbaar*/
+    --h1-font-family: 'Source Sans 3', sans-serif;
+    --h1-font-size: 2rem;
+    /*lettertype h2 en vergelijkbaar*/
+    --h2-font-family: 'Source Sans 3', sans-serif;
+    --h2-font-size: 1.25rem;
+    --h2-font-weight: 900;
+    /*lettertype h3 en vergelijkbaar*/
+    --h3-font-family: 'Source Sans 3', sans-serif;
+    --h3-font-size: 1rem;
+    --h3-font-weight: 900;
+    /*lettertype p en vergelijkbaar*/
+    --p-font-family: 'Source Sans 3', sans-serif;
+    --p-font-size: 1rem;
+}
+  
+/* ---- Pagina algemeen ---- */
+header {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0;
+    padding: 8px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- Fonts ----  */
+h1 {
+    font-family: var(--h1-font-family);
+    font-size: var(--h1-font-size);
+    color: var(--color-second-color);
+    margin: 5px 0 0 0;
+}
+  
+h2 {
+    font-family: var(--h2-font-family);
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    color: var(--color-second-color);
+    margin: 0 0 5px 0;
+}
+
+h3 {
+    font-family: var(--h3-font-family);
+    font-size: var(--h3-font-size);
+    font-weight: var(--h3-font-weight);
+    color: var(--color-third-color);
+    margin: 0 0 5px 0;
+}
+  
+p, label, th, tr, td, option, select, input, .generalContent {
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+    padding: 0;
+    color: var(--color-first-color);
+}  
+
+/* ---- Headers ---- */
+.contentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 8px;
+    background-color: var(--color-fifth-color);
+}
+
+.contentHeader div {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-family: var(--p-font-family); 
+}
+
+.headerItem {
+    display: flex;
+    align-items: center;
+}
+
+.loginHeader {
+    background-color: transparent;
+}
+
+/* ---- Links en buttons ---- */
+.actionLink, .navLink {
+    color: var(--color-first-color);
+    display: inline-block;
+}
+
+.actionLink:hover {
+    color: var(--color-sixth-color);
+    font-weight: bold;
+}
+
+.navLink:hover {
+    color: var(--color-third-color);
+    font-weight: bold;
+}
+
+.loginButton {
+    color: var(--color-first-color);
+    background-color: var(--color-fourth-color);
+    border: 1.5px solid var(--color-first-color);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+
+.loginButton:hover, .loginButton:focus {
+    background-color: var(--color-first-color);
+    border: 1.5px solid var(--color-first-color);
+    color: var(--color-fourth-color);
+}
+
+.registerButton {
+    color: var(--color-fourth-color);
+    background-color: var(--color-first-color);
+    border: 1.5px solid var(--color-first-color);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+
+.registerButton:hover, .registerButton:focus {
+    background-color: var(--color-fourth-color);
+    border: 1.5px solid var(--color-first-color);
+    color: var(--color-first-color);
+}
+
+.headerButton {
+    color: var(--color-fourth-color);
+    background-color: var(--color-third-color);
+    border: 1.5px solid var(--color-third-color);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+
+.navButton {
+    color: var(--color-fourth-color);
+    background-color: var(--color-third-color);
+    border: 1.5px solid var(--color-third-color);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+    margin: 0 10px 20px 0;
+    cursor: pointer;
+}
+
+.navButton:hover, .navButton:focus, .headerButton:hover, .headerButton:focus {
+    background-color: var(--color-fourth-color);
+    color: var(--color-third-color);
+    border: 1.5px solid var(--color-third-color);
+}
+
+.actionButton {
+    color: var(--color-fourth-color);
+    background-color: var(--color-sixth-color);
+    border: 1.5px solid var(--color-sixth-color);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+    margin: 0 10px 20px 0;
+    cursor: pointer;
+}
+
+.actionButton:hover, .actionButton:focus {
+    background-color: var(--color-fourth-color);
+    border: 1.5px solid var(--color-sixth-color);
+    color: var(--color-sixth-color);
+}
+
+.iconButton {
+    background-color: transparent;
+    border: none;
+}
+
+.iconButton:hover, .iconButton:focus {
+    color: var(--color-sixth-color);
+    cursor: pointer;
+}
+
+.filterText {
+    color: var(--color-first-color);
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+}
+
+/* ---- Tabellen ---- */
+table {
+    width: 80%;
+    margin: 8px 0;
+    border-collapse: collapse;
+}
+
+table, th, tr, td {
+    border: 1px solid var(--color-first-color);
+    padding: 2px 8px;
+    text-align: left;
+}
+
+.centeredCell {
+    text-align: center;
+}
+
+.wideColumn {
+    width: 20%;
+}
+
+.narrowTable {
+    width: 40%;
+}
+
+/* ---- Formulieren ---- */
+.formField {
+    margin: 8px 0 0 0;
+}
+.formButton {
+    margin: 8px 0 0 0;
+}
+
+.formTextArea {
+    width: 20%;
+}
+
+/* ---- Meldingen ---- */
+.errorMessage {
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+    padding: 0;
+    color: rgb(209, 41, 41);
+    margin: 0 0 10px 0;
+}
+
+.successMessage {
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+    padding: 0;
+    color: var(--color-sixth-color);
+    margin: 0 0 10px 0;
+}
+
+.infoNote {
+    font-size: 0.75rem;
+    font-style: italic;
+    margin: 20px 0;
+}
